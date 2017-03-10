@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Text analyzer</title>
+    <title>Avram's Text analyzer</title>
     <meta charset="utf-8">
 
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
@@ -11,11 +11,13 @@
     <div class="container">
         <main>
             <h1>Text analzyer</h1>
+            <h2>https://courses.thinkful.com/fewd-001v6/project/3.1.4</h2>
             <p>Paste in text below, submit, and get some basic stats back.</p>
             <form>
                 <div>
                     <label for="user-text">Text to analyze</label>
-                    <textarea cols="60" rows="20" id="user-text" name="user-text" placeholder="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." required></textarea>
+                    <textarea cols="60" rows="20" id="user-text" name="user-text" required>Lorem ipsum dolor sit sit, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </textarea>
                 </div>
                 <div>
                     <button type="submit">Analyze it!</button>
@@ -24,18 +26,21 @@
 
             <dl class="hidden text-report">
                 <dt>Word count</dt>
-                <dd></dd>
+                <dd class="numberOfWords"></dd>
 
                 <dt>Unique word count</dt>
-                <dd></dd>
+                <dd class="numberOfUnqies"></dd>
 
                 <dt>Average word length</dt>
-                <dd></dd>
+                <dd class="averageWordLength"></dd>
             </dl>
         </main>
     </div>
 
     <!-- link to jquery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.js"></script>
+  
     <!-- link to your app.js -->
+    <script type="text/javascript" src="app.js"></script>
 </body>
 </html>
